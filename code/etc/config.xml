@@ -27,5 +27,40 @@
                 </livechat>
             </updates>
         </layout>
+        <translate>
+            <modules>
+                <CosmoCommerce_Livechat>
+                    <files>
+                        <default>CosmoCommerce_Livechat.csv</default>
+                    </files>
+                </CosmoCommerce_Livechat>
+            </modules>
+        </translate>
     </frontend>
+    <adminhtml>
+		<acl>
+			<resources>
+				<all>
+					<title>Allow Everything</title>
+				</all>
+				<admin>
+					<children>
+						<CosmoCommerce_Livechat>
+							<title>FAS01 Template</title>
+							<sort_order>10</sort_order>
+						</CosmoCommerce_Livechat>
+					</children>
+				</admin>
+			</resources>
+		</acl>
+        <translate>
+            <modules>
+                <CosmoCommerce_Livechat>
+                    <files>
+                        <default>CosmoCommerce_Livechat.csv</default>
+                    </files>
+                </CosmoCommerce_Livechat>
+            </modules>
+        </translate>
+    </adminhtml> 
 </config>

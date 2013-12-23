@@ -1,4 +1,4 @@
-CosmoCommerce FAS01
+CosmoCommerce Magento Livechat
 ==============
 
 
@@ -16,7 +16,7 @@ Dependency:
 
 modman init 
 
-modman clone https://github.com/cosmocommerce/cosmocommerce.git
+modman clone https://github.com/cosmocommerce/magento-livechat.git
 
 
 ## Documentation ##

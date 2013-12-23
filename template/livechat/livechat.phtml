@@ -1,1 +1,33 @@
-f
+
+<script>
+ 
+jQuery(document).ready(function(){
+
+	  jQuery('.scrolltop').click(function () {
+		  jQuery('body,html').animate({
+			  scrollTop: 0
+		  },
+		  800);
+	  });
+
+	jQuery(window).scroll(function() {
+		if (jQuery(this).scrollTop()) {
+			jQuery('.scroll_top').stop(true, true).fadeIn();
+		} else {
+			jQuery('.scroll_top').stop(true, true).fadeOut();
+		}
+		
+	
+	  
+	});
+	 
+
+});
+</script>
+<div class="scroll_top">
+
+<a class="scrolltop" href="#">
+&nbsp;
+</a>
+
+</div> 

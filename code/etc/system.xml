@@ -1,5 +1,11 @@
 <?xml version="1.0"?>
 <config>
+    <tabs>
+        <cosmocommerce translate="label" module="livechat">
+            <label>CosmoCommerce.com</label>
+            <sort_order>300</sort_order>
+        </cosmocommerce>
+    </tabs>
     <sections>
         <livechat>
             <label>Livechat Settings</label>
