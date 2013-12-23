@@ -1,9 +1,0 @@
-<?xml version="1.0"?>
-<layout version="0.1.0">
-
-    <default>
-        <reference name="after_body_start">
-            <block type="livechat/livechat" name="livechat" as="livechat" template="livechat/livechat.phtml" />
-        </reference>
-    </default>
-</layout>

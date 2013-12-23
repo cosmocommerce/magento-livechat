@@ -6,6 +6,9 @@
             <action method="addCss"><stylesheet>css/livechat.css</stylesheet></action>
             <action method="addItem"><type>skin_js</type><script>js/livechat.js</script></action>
         </reference>
+        <reference name="after_body_start">
+            <block type="livechat/livechat" name="livechat" as="livechat" template="livechat/livechat.phtml" />
+        </reference>
     </default>
     
 </layout> 
