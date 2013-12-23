@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<config>
+    <global>
+        <modules>
+            <CosmoCommerce_Livechat>
+                <version>0.1.0</version>
+            </CosmoCommerce_Livechat>
+        </modules>
+        <blocks>
+            <livechat><class>CosmoCommerce_Livechat_Block</class></livechat>
+    	</blocks> 
+    </global>
+    <frontend>
+        <translate>
+            <modules>
+                <CosmoCommerce_Livechat>
+                    <files>
+                        <default>CosmoCommerce_Livechat.csv</default>
+                    </files>
+                </CosmoCommerce_Livechat>
+            </modules>
+        </translate>
+        <layout>
+            <updates>
+                <livechat>
+                    <file>livechat.xml</file>
+                </livechat>
+            </updates>
+        </layout>
+    </frontend>
+</config>

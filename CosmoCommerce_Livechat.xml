@@ -1,0 +1,8 @@
+<config>
+    <modules>
+        <CosmoCommerce_Livechat>
+            <active>true</active>
+            <codePool>community</codePool>
+        </CosmoCommerce_Livechat>
+    </modules>
+</config>

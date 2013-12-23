@@ -1,0 +1,4 @@
+code                                   app/code/community/CosmoCommerce/Livechat
+livechat.xml     app/design/frontend/base/default/layout/livechat.xml 
+CosmoCommerce_Livechat.xml                          app/etc/modules/CosmoCommerce_Livechat.xml
+template/livechat/livechat.phtml                             app/design/frontend/base/default/template/livechat/livechat.phtml
