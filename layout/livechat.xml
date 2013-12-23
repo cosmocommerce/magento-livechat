@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    
+    <default>
+        <reference name="head">
+            <action method="addCss"><stylesheet>css/livechat.css</stylesheet></action>
+            <action method="addItem"><type>skin_js</type><script>js/livechat.js</script></action>
+        </reference>
+    </default>
+    
+</layout> 

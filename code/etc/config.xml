@@ -46,7 +46,7 @@
 				<admin>
 					<children>
 						<CosmoCommerce_Livechat>
-							<title>FAS01 Template</title>
+							<title>Livechat</title>
 							<sort_order>10</sort_order>
 						</CosmoCommerce_Livechat>
 					</children>

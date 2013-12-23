@@ -2,4 +2,7 @@ code                                   app/code/community/CosmoCommerce/Livechat
 livechat.xml     app/design/frontend/base/default/layout/livechat.xml 
 CosmoCommerce_Livechat.xml                          app/etc/modules/CosmoCommerce_Livechat.xml
 template/livechat/livechat.phtml                             app/design/frontend/base/default/template/livechat/livechat.phtml
+layout/livechat.xml                             app/design/frontend/base/default/layout/livechat.xml
 skin/zxkf.png                  skin/frontend/base/default/images/zxkf.png
+skin/livechat.css                 skin/frontend/base/default/css/livechat.css
+locale/zh_CN/CosmoCommerce_Livechat.csv      app/locale/zh_CN/CosmoCommerce_Livechat.csv
