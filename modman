@@ -5,4 +5,5 @@ template/livechat/livechat.phtml                             app/design/frontend
 layout/livechat.xml                             app/design/frontend/base/default/layout/livechat.xml
 skin/zxkf.png                  skin/frontend/base/default/images/zxkf.png
 skin/livechat.css                 skin/frontend/base/default/css/livechat.css
+skin/livechat.js                 skin/frontend/base/default/js/livechat.js
 locale/zh_CN/CosmoCommerce_Livechat.csv      app/locale/zh_CN/CosmoCommerce_Livechat.csv
