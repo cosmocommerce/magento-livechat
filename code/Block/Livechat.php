@@ -20,7 +20,7 @@
  * L: Shanghai,China
  * M:sales@cosmocommerce.com
  */
-class CosmoCommerce_Livechat_Block_Form extends Mage_Core_Block_Template
+class CosmoCommerce_Livechat_Block_Livechat extends Mage_Core_Block_Template
 {
     protected function _construct()
     {

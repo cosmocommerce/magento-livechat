@@ -1,14 +1,36 @@
-
+<style>
+#MallCustomerService a{
+top: 115px;
+position: relative;
+right: 2px;
+}
+#MallCustomerService {
+position: absolute;
+display: block;
+width: 45px;
+z-index: 99999;
+background: url('<?php echo $this->getSkinUrl('images/zxkf.png'); ?>') no-repeat 0 0;
+text-align: right;
+height: 145px;
+background-color: #fff;
+-webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+-webkit-box-shadow: 0px 0px 46px 12px rgba(0, 0, 0, 0.09);
+-moz-box-shadow: 0px 0px 46px 12px rgba(0, 0, 0, 0.09);
+box-shadow: 0px 0px 46px 12px rgba(0, 0, 0, 0.09);
+}
+.DxlMallHover {
+-webkit-transition: top .3s ease-in-out;
+-moz-transition: top .3s ease-in-out;
+transition: top .3s ease-in-out;
+z-index: 99999;
+}
+</style>
 <script>
  
+	
+	
 jQuery(document).ready(function(){
-
-	  jQuery('.scrolltop').click(function () {
-		  jQuery('body,html').animate({
-			  scrollTop: 0
-		  },
-		  800);
-	  });
 
 	jQuery(window).scroll(function() {
 		if (jQuery(this).scrollTop()) {
@@ -20,14 +42,74 @@ jQuery(document).ready(function(){
 	
 	  
 	});
-	 
-
+    jQuery(window).on("resize",function(){
+        resizeFunction()
+    }).on("scroll",function(){
+        scrollFunction();
+    });
+    var scDefTop = 100; //在线客服默认高
+    var scDefTopTz;
+    var MallCustomerService = jQuery("#MallCustomerService");
+	scrollFunction();
+	resizeFunction();
+	function scrollFunction(){
+		var scTop = jQuery(window).scrollTop();
+		var navTop = jQuery("header").height();
+		MallCustomerService.css({"top":scTop + scDefTop + "px"});
+		
+		//DxlAppMin.css({"top":scTop + jQuery(window).height() - 97 + "px"});
+		//DxlAppMax.css({"top":scTop + jQuery(window).height() - 205 + "px"});
+		
+		//MallTopCall.css({"top":scTop + jQuery(window).height() - 144 + "px"});
+		//scTop>600 ? MallTopCall.fadeIn() : MallTopCall.fadeOut();
+		
+	}
+	function resizeFunction(){
+		var _width = jQuery("body").width();
+		if(_width >= 1110){
+			MallCustomerService.css("right",5);
+			//DxlAppMin.css("left",(_width/2) + 500);
+			//DxlAppMax.css("left",(_width/2) + 348);
+			//MallTopCall.css("left",(_width/2) + 500);
+		
+		}else{
+			MallCustomerService.css("right",5);
+			//DxlAppMin.css("left",_width - 50);
+			//DxlAppMax.css("left",_width - 202);
+			//MallTopCall.css("left",_width - 50);
+		} 
+	}
+	scDefTopTz = function(){
+		scrollFunction();
+	}
+	MallCustomerService.addClass("MallHover");
 });
 </script>
-<div class="scroll_top">
 
-<a class="scrolltop" href="#">
-&nbsp;
-</a>
+<div class="" id='MallCustomerService'>
+<?php 
+
+
+$qq=urlencode(Mage::getStoreConfig('livechat/livechat/qq'));
+$wangwang=urlencode(Mage::getStoreConfig('livechat/livechat/wangwang'));
+if(isset($qq)){
+?>
+
+<a class=""  target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=<?php echo $qq; ?>&site=qq&menu=yes"><img border="0" src="http://wpa.qq.com/pa?p=2:<?php echo $qq; ?>:52" alt="点击这里给我发消息" title="点击这里给我发消息"/></a>
+<?php
+}
+?>
+
+<?php
+if(isset($qq)){
+?>
+
+<a class=""  target="_blank" href="http://www.taobao.com/webww/ww.php?ver=3&touid=<?php echo $wangwang; ?>&siteid=cntaobao&status=2&charset=utf-8"><img border="0" src="http://amos.alicdn.com/realonline.aw?v=2&uid=<?php echo $wangwang; ?>&site=cntaobao&s=2&charset=utf-8" alt="点击这里给我发消息" /></a>
+
+<?php
+}
+?>
+
+
 
 </div> 
