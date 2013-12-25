@@ -26,22 +26,61 @@
                         <enable translate="label">
                             <label>Enable</label> 
                             <frontend_type>select</frontend_type>
-                            <sort_order>90</sort_order>
+                            <sort_order>1</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
                             <source_model>adminhtml/system_config_source_yesno</source_model>
                         </enable>	
+                        <blockid translate="label comment">
+                            <label>Customize HTML</label>
+                            <comment>
+                                <![CDATA[<span class="notice">如果设置了将会忽略后面的设置. 本设置用于自定义客服模块HTML.如果不熟悉请留空, 设置后方的账号信息.</span>]]>
+                            </comment>
+                            <frontend_type>textarea</frontend_type>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </blockid>	
                         <qq translate="label comment">
                             <label>QQ Number</label>
+                            <comment>
+                                <![CDATA[<span class="notice">例如1637332653.</span>]]>
+                            </comment>
                             <frontend_type>text</frontend_type>
                             <sort_order>6</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
                         </qq>
+                        <alibaba translate="label comment">
+                            <label>Alibaba Account Uid</label>
+                            <comment>
+                                <![CDATA[<span class="notice">例如jorigin.</span>]]>
+                            </comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>3</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </alibaba>
+                        <alibaba_uid translate="label comment">
+                            <label>Alibaba Account Account Name</label>
+                            <comment>
+                                <![CDATA[<span class="notice">例如ISiDe7sj9Vs%3D.</span>]]>
+                            </comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>3</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </alibaba_uid>
                         <wangwang translate="label comment">
                             <label>Wangwang Account</label>
+                            <comment>
+                                <![CDATA[<span class="notice">例如jorigin.</span>]]>
+                            </comment>
                             <frontend_type>text</frontend_type>
                             <sort_order>6</sort_order>
                             <show_in_default>1</show_in_default>

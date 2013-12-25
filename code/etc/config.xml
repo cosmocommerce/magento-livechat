@@ -9,6 +9,11 @@
         <blocks>
             <livechat><class>CosmoCommerce_Livechat_Block</class></livechat>
     	</blocks> 
+        <helpers>
+           <livechat>
+               <class>CosmoCommerce_Livechat_Helper</class>
+           </livechat>
+        </helpers>
     </global>
     <frontend>
         <translate>

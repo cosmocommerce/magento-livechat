@@ -1,28 +1,67 @@
  
-<div class="" id='MallCustomerService'>
 <?php 
+$enable=(Mage::getStoreConfig('livechat/livechat/enable'));
+$blockid=(Mage::getStoreConfig('livechat/livechat/blockid'));
+$qq=trim(urlencode(Mage::getStoreConfig('livechat/livechat/qq')));
+$wangwang=trim(urlencode(Mage::getStoreConfig('livechat/livechat/wangwang')));
+$alibaba1=trim(urlencode(Mage::getStoreConfig('livechat/livechat/alibaba')));
+$alibaba2=trim(urlencode(Mage::getStoreConfig('livechat/livechat/alibaba_uid')));
 
 
-$qq=urlencode(Mage::getStoreConfig('livechat/livechat/qq'));
-$wangwang=urlencode(Mage::getStoreConfig('livechat/livechat/wangwang'));
-if(isset($qq)){
+if(($enable)){
 ?>
 
-<a class=""  target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=<?php echo $qq; ?>&site=qq&menu=yes"><img border="0" src="http://wpa.qq.com/pa?p=2:<?php echo $qq; ?>:52" alt="点击这里给我发消息" title="点击这里给我发消息"/></a>
+    <div class="" id='MallCustomerService'>
+    <?php
+    if(isset($blockid)){
+    ?>
+    
+        
+        
+        <?php
+        echo $blockid;
+        ?>
+
+    <?php
+    }else{
+    ?>
+    
+        <?php
+        if(isset($qq)){
+        ?>
+
+        <a class=""  target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=<?php echo $qq; ?>&site=qq&menu=yes"><img border="0" src="http://wpa.qq.com/pa?p=2:<?php echo $qq; ?>:52" alt="点击这里给我发消息" title="点击这里给我发消息"/></a>
+        <?php
+        }
+        ?>
+
+        <?php
+        if(isset($wangwang)){
+        ?>
+
+        <a class=""  target="_blank" href="http://www.taobao.com/webww/ww.php?ver=3&touid=<?php echo $wangwang; ?>&siteid=cntaobao&status=2&charset=utf-8"><img border="0" src="http://amos.alicdn.com/realonline.aw?v=2&uid=<?php echo $wangwang; ?>&site=cntaobao&s=2&charset=utf-8" alt="点击这里给我发消息" /></a>
+
+        <?php
+        }
+        ?>
+
+
+        <?php
+        if(isset($alibaba1) && isset($alibaba2)){
+        ?>
+        <a target="_blank" href='#' onclick="window.open('http://amos1.sh1.china.alibaba.com/webamos/webchat?v=1&from=alipay&uid=<?php echo $alibaba1; ?>','WebChat','left=200,top=200,width=560, height=500,location=no,toolbar=no,status=no,resizable=no,scrollbars=no');return false;"><img border=0 src='http://scs1.sh1.china.alibaba.com/online.atc?v=1&uid=<?php echo $alibaba2; ?>&s=102' alt='点击这里可以给对方发送消息'></a>
+
+
+        <?php
+        }
+        ?>
+
+
+
+    <?php
+    }
+    ?>
+    </div>
 <?php
 }
 ?>
-
-<?php
-if(isset($qq)){
-?>
-
-<a class=""  target="_blank" href="http://www.taobao.com/webww/ww.php?ver=3&touid=<?php echo $wangwang; ?>&siteid=cntaobao&status=2&charset=utf-8"><img border="0" src="http://amos.alicdn.com/realonline.aw?v=2&uid=<?php echo $wangwang; ?>&site=cntaobao&s=2&charset=utf-8" alt="点击这里给我发消息" /></a>
-
-<?php
-}
-?>
-
-
-
-</div> 
